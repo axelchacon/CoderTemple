@@ -1,0 +1,396 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap");
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+}
+
+.navega {
+  width: 100%;
+  display: flex;
+  background-size: 100%;
+  background-position: center;
+  text-align: center;
+  background-color: #37a5c7;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  z-index: 3;
+}
+.navega .logo {
+  margin-left: 35px;
+  margin-right: 3px;
+}
+.navega ul {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+.navega ul li {
+  display: inline-block;
+  list-style-type: none;
+  border-right: 2px solid #fff;
+}
+.navega ul li a {
+  color: #ce17b0;
+  text-align: justify;
+  padding: 15px;
+  border: #db27cc;
+  display: block;
+  text-decoration: none;
+}
+.navega ul li a a:hover {
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.navega ul li a:hover {
+  background: rgba(190, 64, 64, 0.3);
+  color: white;
+}
+
+.programa {
+  height: 700px;
+  position: relative;
+  top: 74px;
+  justify-content: center;
+  text-align: center;
+  background-image: url(../img/Azul.png);
+  background-size: cover;
+}
+.programa h2 {
+  text-align: center;
+  justify-content: center;
+  height: 100px;
+  color: #202420;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  padding: 30px;
+}
+.programa .contenedor-programa {
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  row-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.programa .contenedor-programa .MiniCoder5-icon {
+  background-image: url("../img/MiniCoder5.png");
+  background-size: cover;
+  border: 5PX solid #352f30;
+  height: 400px;
+  width: 250px;
+  margin: 10px;
+  transition: height 1s;
+}
+.programa .contenedor-programa .MiniCoder5-icon:hover {
+  height: 450px;
+  transform: scale(1.1);
+}
+.programa .contenedor-programa .MiniCoder9-icon {
+  background-image: url("../img/MiniCoder9.png");
+  background-size: cover;
+  border: 5PX solid #352f30;
+  height: 400px;
+  width: 250px;
+  margin: 10px;
+  transition: height 1s;
+}
+.programa .contenedor-programa .MiniCoder9-icon:hover {
+  height: 450px;
+  transform: scale(1.1);
+}
+.programa .contenedor-programa .MiniCoder12-icon {
+  background-image: url("../img/MiniCoder12.png");
+  background-size: cover;
+  border: 5PX solid #352f30;
+  height: 400px;
+  width: 250px;
+  margin: 10px;
+  transition: height 1s;
+}
+.programa .contenedor-programa .MiniCoder12-icon:hover {
+  height: 450px;
+  transform: scale(1.1);
+}
+.programa .contenedor-programa .MiniCoder18-icon {
+  background-image: url("../img/MiniCoder18.png");
+  background-size: cover;
+  border: 5PX solid #352f30;
+  height: 400px;
+  width: 250px;
+  margin: 10px;
+  transition: height 1s;
+}
+.programa .contenedor-programa .MiniCoder18-icon:hover {
+  height: 450px;
+  transform: scale(1.1);
+}
+
+.contenedor-benedicios {
+  position: relative;
+  height: 380px;
+  top: 74px;
+}
+.contenedor-benedicios h2 {
+  text-align: center;
+}
+.contenedor-benedicios .benefi {
+  display: flex;
+  flex-direction: row;
+  row-gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-benedicios .benefi .ben1-ben {
+  background-image: url("../img/ben1.png");
+  background-size: cover;
+  height: 300px;
+  width: 250px;
+  margin: 10px;
+  transition: height 1s;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-benedicios .benefi .ben1-ben h2 {
+  position: relative;
+  top: 120px;
+  text-align: center;
+}
+.contenedor-benedicios .benefi .ben1-ben p {
+  position: relative;
+  top: 130px;
+  text-align: center;
+}
+.contenedor-benedicios .benefi .ben2-ben {
+  background-image: url("../img/ben2.png");
+  background-size: cover;
+  height: 300px;
+  width: 250px;
+  margin: 10px;
+  transition: height 1s;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-benedicios .benefi .ben2-ben h2 {
+  position: relative;
+  top: 120px;
+  text-align: center;
+}
+.contenedor-benedicios .benefi .ben2-ben p {
+  position: relative;
+  top: 130px;
+  text-align: center;
+}
+.contenedor-benedicios .benefi .ben3-ben {
+  background-image: url("../img/ben3.png");
+  background-size: cover;
+  height: 300px;
+  width: 250px;
+  margin: 10px;
+  transition: height 1s;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-benedicios .benefi .ben3-ben h2 {
+  position: relative;
+  top: 120px;
+  text-align: center;
+}
+.contenedor-benedicios .benefi .ben3-ben p {
+  position: relative;
+  top: 130px;
+  text-align: center;
+}
+.contenedor-benedicios .benefi .ben4-ben {
+  background-image: url("../img/ben4.png");
+  background-size: cover;
+  height: 300px;
+  width: 250px;
+  margin: 10px;
+  transition: height 1s;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-benedicios .benefi .ben4-ben h2 {
+  position: relative;
+  top: 120px;
+  text-align: center;
+}
+.contenedor-benedicios .benefi .ben4-ben p {
+  position: relative;
+  top: 130px;
+  text-align: center;
+}
+
+.Test {
+  height: 500px;
+  position: relative;
+  top: 74px;
+}
+.Test h2 {
+  text-align: center;
+}
+.Test .contenedo-test {
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.Test .contenedo-test div {
+  border: 1px solid #494545;
+  width: 230px;
+  margin: 10px;
+  height: 320px;
+}
+
+.Comu {
+  height: 200px;
+  width: 100%;
+  position: relative;
+  top: 74px;
+  padding: 20px;
+}
+
+.Comunicate {
+  position: relative;
+  display: grid;
+  margin-top: 25px;
+  padding: 40px;
+  width: 100%;
+  height: 400px;
+  bottom: 25px;
+  top: 55px;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
+  align-items: center;
+  background-color: #21e7cd;
+}
+.Comunicate h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 0px;
+}
+.Comunicate .Redes {
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 0px;
+}
+.Comunicate h3 {
+  display: flex;
+  left: 0px;
+  margin-left: 500px;
+  margin-right: 500px;
+  padding: 30px;
+  height: 160px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.pie-pagina {
+  width: 100%;
+  margin: 0;
+  padding: 0%;
+  background-color: #0a1a2a;
+  display: grid;
+  height: 340px;
+  width: 100%;
+  position: relative;
+  bottom: 0px;
+  top: 35px;
+  grid-template-rows: repeat(2, 1fr);
+}
+.pie-pagina .grupo-1 {
+  position: relative;
+  width: 2000px;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+  bottom: 10px;
+}
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img {
+  display: flex;
+  position: relative;
+  left: 35px;
+  background-size: 30px;
+  margin-bottom: 30px;
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+}
+.pie-pagina .grupo-1 .box h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p {
+  color: #efefef;
+  margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .box .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #0d2033;
+  text-align: center;
+  transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .box .red-social a:hover {
+  color: aqua;
+}
+@media screen and (max-width: 800px) {
+  .pie-pagina .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+}
+.pie-pagina .grupo-2 {
+  background-color: #0a1a2a;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+  height: 80px;
+  position: relative;
+  top: 30px;
+}
+.pie-pagina .grupo-2 small {
+  font-size: 15px;
+}
+
+/*# sourceMappingURL=parakids.css.map */
