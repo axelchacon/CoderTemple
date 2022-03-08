@@ -5,11 +5,8 @@
 }
 
 header {
-  background-position: center;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  z-index: 2;
+  background-color: #37a5c7;
+  height: 84px;
 }
 
 .navega {
@@ -22,11 +19,11 @@ header {
   position: fixed;
   align-items: center;
   justify-content: center;
-  height: 80px;
+  height: 79px;
   z-index: 3;
 }
 .navega .logo {
-  margin-left: 35px;
+  margin-left: 25px;
   margin-right: 3px;
 }
 .navega ul {
@@ -59,6 +56,108 @@ header {
   color: white;
 }
 
+#btn-menu {
+  display: none;
+}
+
+header label {
+  display: none;
+  border: 5px solid #0a1a2a;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+header label:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  header {
+    display: inline-block;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    z-index: 3;
+  }
+
+  .navega {
+    width: 70%;
+    display: block;
+    background-size: 100%;
+    background-position: center;
+    text-align: center;
+    background-color: #37a5c7;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    height: 252px;
+    z-index: 3;
+    margin-left: -70%;
+  }
+  .navega .logo {
+    display: none;
+    margin-left: 25px;
+    margin-right: 3px;
+  }
+  .navega ul {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .navega ul li {
+    display: inline-block;
+    list-style-type: none;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    width: 100%;
+  }
+  .navega ul li a {
+    color: #ce17b0;
+    text-align: justify;
+    padding: 15px;
+    border: #db27cc;
+    display: block;
+    text-decoration: none;
+  }
+  .navega ul li a a:hover {
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+  }
+
+  .navega ul li a:hover {
+    background: rgba(190, 64, 64, 0.3);
+    color: white;
+  }
+
+  #btn-menu {
+    display: none;
+  }
+
+  #btn-menu:checked ~ .navega {
+    margin: 0;
+  }
+
+  header label {
+    display: flex;
+    border: 5px solid #0a1a2a;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header label:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3);
+  }
+}
 .tarjetas {
   display: flex;
   flex-direction: row;
@@ -85,27 +184,23 @@ header {
 
 .pie-pagina {
   width: 100%;
-  margin: 0;
-  padding: 0%;
   background-color: #0a1a2a;
-  display: grid;
-  height: 340px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
   width: 100%;
-  position: relative;
-  bottom: 0px;
-  top: 35px;
-  grid-template-rows: repeat(2, 1fr);
+  flex-direction: column;
 }
 .pie-pagina .grupo-1 {
-  position: relative;
-  width: 2000px;
-  max-width: 1200px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 50px;
-  padding: 45px 0px;
-  bottom: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.pie-pagina .grupo-1 .box {
+  margin: 20px;
 }
 .pie-pagina .grupo-1 .box figure {
   width: 100%;
@@ -114,13 +209,7 @@ header {
   justify-content: center;
   align-items: center;
 }
-.pie-pagina .grupo-1 .box figure img {
-  display: flex;
-  position: relative;
-  left: 35px;
-  background-size: 30px;
-  margin-bottom: 30px;
-  background-size: cover;
+.pie-pagina .grupo-1 .box img {
   height: 100px;
   width: 100px;
 }
@@ -148,25 +237,84 @@ header {
 .pie-pagina .grupo-1 .box .red-social a:hover {
   color: aqua;
 }
-@media screen and (max-width: 800px) {
-  .pie-pagina .pie-pagina .grupo-1 {
-    width: 90%;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 30px;
-    padding: 35px 0px;
-  }
-}
 .pie-pagina .grupo-2 {
   background-color: #0a1a2a;
-  padding: 15px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   color: #fff;
-  height: 80px;
+  height: 70px;
   position: relative;
-  top: 30px;
+  top: 15px;
 }
 .pie-pagina .grupo-2 small {
   font-size: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .pie-pagina {
+    width: 100%;
+    background-color: #0a1a2a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    flex-direction: column;
+  }
+  .pie-pagina .grupo-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pie-pagina .grupo-1 .box img {
+    height: 100px;
+    width: 100px;
+  }
+  .pie-pagina .grupo-1 .box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+  }
+  .pie-pagina .grupo-1 .box p {
+    color: #efefef;
+    margin-bottom: 10px;
+  }
+  .pie-pagina .grupo-1 .box .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+  }
+  .pie-pagina .grupo-1 .box .red-social a:hover {
+    color: aqua;
+  }
+  .pie-pagina .grupo-2 {
+    background-color: #0a1a2a;
+    text-align: center;
+    color: #fff;
+    height: 50px;
+    position: relative;
+  }
+  .pie-pagina .grupo-2 small {
+    font-size: 15px;
+  }
 }
 
 /*# sourceMappingURL=acceso.css.map */
