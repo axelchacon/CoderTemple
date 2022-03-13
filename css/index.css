@@ -293,13 +293,18 @@ header label:hover {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 #CursosYProgramas .Cu .FullStack {
   text-align: center;
+  margin: 20px;
 }
 #CursosYProgramas .Cu .FullStack img:hover {
   transform: scale(1.05);
   transition: all 1.5;
+}
+#CursosYProgramas .Cu .FullStack h2 {
+  margin: 20px;
 }
 #CursosYProgramas .Cu .FullStack h2 a {
   text-decoration: none;
@@ -307,10 +312,14 @@ header label:hover {
 }
 #CursosYProgramas .Cu .MiniMBA {
   text-align: center;
+  margin: 20px;
 }
 #CursosYProgramas .Cu .MiniMBA img:hover {
   transform: scale(1.05);
   transition: all 1.5;
+}
+#CursosYProgramas .Cu .MiniMBA h2 {
+  margin: 20px;
 }
 #CursosYProgramas .Cu .MiniMBA h2 a {
   text-decoration: none;
@@ -357,10 +366,10 @@ header label:hover {
   height: 150px;
   background: url(../img/wave\ nevo.png);
   background-size: 2000px 150px;
-  animation: animate 999s both infinite;
+  animation: animate 1588s both infinite;
   z-index: 2;
   width: 100%;
-  bottom: -85px;
+  bottom: -120px;
 }
 @keyframes animate {
   0% {
@@ -377,15 +386,15 @@ header label:hover {
     height: 150px;
     background: url(../img/wave\ nevo.png);
     background-size: 2000px 150px;
-    animation: animate 999s both infinite;
+    animation: animate 1999s both infinite;
     z-index: 2;
     width: 100%;
-    bottom: -30px;
+    bottom: -35px;
   }
 }
 .tabla {
   position: relative;
-  background-color: #87e6fd;
+  background-color: #eff6f8;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -398,10 +407,11 @@ header label:hover {
   list-style-position: inside;
   list-style-type: square;
   text-align: center;
+  margin: 10px;
 }
 .tabla table {
   position: relative;
-  border: 4px solid #4f6e14;
+  border: 2px solid #1f201d;
   height: 350px;
 }
 .tabla table .beneficiosplataforma {
@@ -412,7 +422,7 @@ header label:hover {
   font-weight: 700;
   text-align: center;
   list-style-position: inside;
-  list-style-type: upper-roman;
+  list-style-type: square;
   text-decoration: underline red;
 }
 .tabla #beneficios {
@@ -542,7 +552,7 @@ header label:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #21e7cd;
+  background-color: #eff6f8;
 }
 .Comunicate h1 {
   display: flex;

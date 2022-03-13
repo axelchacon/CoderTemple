@@ -6,173 +6,178 @@
 }
 
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-    height: 80px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 80px; 
 }
 .navega {  
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    background-color: #37a5c7 ;
-    align-items: center;
-    justify-content: center;
-    height: 80px;
-    z-index: 1;
- 
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #37a5c7 ;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  z-index: 1;
+  font-size: 15px;
+
 }
 #btn-menu {
-    display: none;
+  display: none;
 }
 
 header label {
-    display: none;
-    
+  display: none;
+  
 }
 
 .logo {
-   width: 50px;
-    margin-left: 35px;
-    margin-right: 3px;
-   
-  
+ width: 50px;
+  margin-left: 35px;
+  margin-right: 3px;
+ 
+
 }
 .navega ul {
-    display: flex;
-    width: 500px;
-    position: relative;
+  display: flex;
+  width: 500px;
+  position: relative;
 
-    
-    margin-right: 10px; 
-    display: flex;
-    justify-content: center;
-    flex-grow: 1;
-    top: 8px;
-    
+  
+  margin-right: 10px; 
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  top: 8px;
+  
 }
 .navega ul li {
-    position: relative;
-    display: flex;
-    list-style-type: none;
-    border-right: 2px solid #fff;
-   
+  position: relative;
+  display: flex;
+  list-style-type: none;
+  border-right: 2px solid #fff;
  
+
 }
 .navega ul li a:hover {
-    background: rgba(0, 0, 0, 0.3);
-    color: white;
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
 }
 .navega ul li a {
-    color: rgb(206, 23, 176);
-    text-align: justify;
-    padding: 15px;
-    display: block;
-    text-decoration: none;
+  color: rgb(206, 23, 176);
+  text-align: justify;
+  padding: 15px;
+  display: block;
+  text-decoration: none;
 }
-
-
 
 
 
 @media (max-width: 768px) {
   header {
-      background:#37a5c7  ;
-      display: inline-block;
-      width: 100%;
-     
-      position: fixed;
-      z-index: 3;
-
+    background: #37a5c7;
+    display: inline-block;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    z-index: 3;
+   
   }
+
   .navega {
-
-      width: 70%;
-      display: flex;
- 
-      background-position: center;
-      text-align: center;
-      background-color: #37a5c7 ;
-      position: fixed;
-      align-items: center;
-      justify-content: center;
-     
-      height: 250px;
-      z-index: 3;
-      margin-left: -75%;
-      top: 80px;
-     
+    width: 70%;
+    display: block;
+    background-size: 100%;
+    background-position: center;
+    text-align: center;
+    background-color: #37a5c7;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    height: 261px;
+    z-index: 3;
+    margin-left: -70%;
+    position: relative;
+    top: 0px;
     
-     
-     
-     
-
-  }
-
-  .navega ul {
-          display: flex;
-          flex-grow: 1;
-          justify-content: flex-start;
-          align-items:  flex-start;
-          width: 400px;
-          flex-direction: column;
-          padding: 35px;
-
-      }
-  .navega li {
-      
-      display: inline-block;
-      list-style-type: none;
+    
   
-      
-      border-bottom: 2px solid #fff;
-      
-      width: 340px;
-     
-      height: 50px;
-      
+   
+  }
+  .navega .logo {
+    display: none;
+    margin-left: 25px;
+    margin-right: 3px;
+  }
+  .navega ul {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+   
+    width: 100%;
+   
+    position: relative;
+    top: 0px;
+
+    height: 250px;
+    padding: 0;
+   
+  }
+  .navega ul li {
+    display: inline-block;
+    list-style-type: none;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    width: 100%;
+    
+    height: 52px;
+    position: relative;
+    left: 0px;
+    
+  }
+  .navega ul li a {
+    color: #ce17b0;
+    text-align: justify;
+   
+    border: #db27cc;
+    display: block;
+    text-decoration: none;
+    
+    height: 50px;
   }
   .navega ul li a:hover {
-      background: rgba(0, 0, 0, 0.3);
-      color: white;
-      width: 340px;
-  }
-
-
-
-
-
-  .logo {
-      display: none;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    
   }
 
   #btn-menu {
-      display: none;
-      }
-      #btn-menu:checked ~ .navega  {
-      margin: 0;
-      } 
-      header label {
-      display: flex;
-      border: 5px solid #0a1a2a;
-      width: 50px;
-      height: 50px;
-      margin: 10px;
-      align-items: center;
-      justify-content: center;  
-        }
-  
-  
-  
-      header label:hover {
-      cursor: pointer;
-      background: rgba(0, 0, 0, 0.3);
-      }
+    display: none;
+  }
 
-  
+  #btn-menu:checked ~ .navega {
+    margin: 0;
+  }
+
+  header label {
+    display: flex;
+    border: 5px solid #0a1a2a;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header label:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3);
+  }
 }
-
 @media screen and (min-width: 768px) {
     .Coro {
       

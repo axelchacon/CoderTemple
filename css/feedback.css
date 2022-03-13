@@ -74,105 +74,109 @@ header label {
 
 
 
-
 @media (max-width: 768px) {
-    header {
-        background:#37a5c7  ;
-        display: inline-block;
-        width: 100%;
-       
-        position: fixed;
-        z-index: 3;
-
-    }
-    .navega {
-
-        width: 70%;
-        display: flex;
+  header {
+    background: #37a5c7;
+    display: inline-block;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    z-index: 3;
    
-        background-position: center;
-        text-align: center;
-        background-color: #37a5c7 ;
-        position: fixed;
-        align-items: center;
-        justify-content: center;
-       
-        height: 250px;
-        z-index: 3;
-        margin-left: -75%;
-        top: 80px;
-       
-      
-       
-       
-       
+  }
 
-    }
-
-    .navega ul {
-            display: flex;
-            flex-grow: 1;
-            justify-content: flex-start;
-            align-items:  flex-start;
-            width: 400px;
-            flex-direction: column;
-            padding: 35px;
-
-        }
-    .navega li {
-        
-        display: inline-block;
-        list-style-type: none;
+  .navega {
+    width: 70%;
+    display: block;
+    background-size: 100%;
+    background-position: center;
+    text-align: center;
+    background-color: #37a5c7;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    height: 261px;
+    z-index: 3;
+    margin-left: -70%;
+    position: relative;
+    top: 0px;
     
-        
-        border-bottom: 2px solid #fff;
-        
-        width: 340px;
-       
-        height: 50px;
-        
-    }
-    .navega ul li a:hover {
-        background: rgba(0, 0, 0, 0.3);
-        color: white;
-        width: 340px;
-    }
+    
   
+   
+  }
+  .navega .logo {
+    display: none;
+    margin-left: 25px;
+    margin-right: 3px;
+  }
+  .navega ul {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+   
+    width: 100%;
+   
+    position: relative;
+    top: 0px;
 
-
-
-
-    .logo {
-        display: none;
-    }
-
-    #btn-menu {
-        display: none;
-        }
-        #btn-menu:checked ~ .navega  {
-        margin: 0;
-        } 
-        header label {
-        display: flex;
-        border: 5px solid #0a1a2a;
-        width: 50px;
-        height: 50px;
-        margin: 10px;
-        align-items: center;
-        justify-content: center;  
-          }
+    height: 250px;
+    padding: 0;
+   
+  }
+  .navega ul li {
+    display: inline-block;
+    list-style-type: none;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    width: 100%;
     
+    height: 52px;
+    position: relative;
+    left: 0px;
     
-    
-        header label:hover {
-        cursor: pointer;
-        background: rgba(0, 0, 0, 0.3);
-        }
+  }
+  .navega ul li a {
+    color: #ce17b0;
+    text-align: justify;
+    padding: 15px;
+    border: #db27cc;
+    display: block;
+    text-decoration: none;
+    height: 50px;
+  }
+  .navega ul li a:hover {
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+  }
 
-    
+ 
+
+  #btn-menu {
+    display: none;
+  }
+
+  #btn-menu:checked ~ .navega {
+    margin: 0;
+  }
+
+  header label {
+    display: flex;
+    border: 5px solid #0a1a2a;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header label:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3);
+  }
 }
-
-
 
 .formu {
     width: 100%;

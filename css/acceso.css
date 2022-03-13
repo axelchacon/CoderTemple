@@ -161,27 +161,118 @@ header label:hover {
 .tarjetas {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 50px;
   height: 800px;
   position: relative;
-  top: 80px;
+  top: 0px;
   align-items: center;
   justify-content: center;
 }
 .tarjetas .tajetas__bloque {
-  height: 480px;
+  height: 580px;
   width: 370px;
-  margin: 10px;
 }
 .tarjetas .tajetas__bloque img {
-  height: 450px;
+  height: 500px;
   width: 100%;
-  border: 2px solid #232721;
+  border-radius: 2px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px;
+  cursor: pointer;
 }
 .tarjetas .tajetas__bloque h2 {
   text-align: center;
+  position: relative;
+  top: 30px;
+}
+.tarjetas .tajetas__bloque .imagentip {
+  position: relative;
+  background: rgba(51, 59, 57, 0.7);
+  height: 503px;
+  width: 100%;
+  bottom: 531px;
+  border-radius: 10px;
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  cursor: pointer;
+  border: 10px solid gold;
 }
 
+.tarjetas .tajetas__bloque:hover > .imagentip {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media screen and (max-width: 830px) {
+  .tarjetas {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    height: 900px;
+    position: relative;
+    top: 0px;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+  }
+  .tarjetas .tajetas__bloque {
+    height: 248px;
+    width: 100%;
+  }
+  .tarjetas .tajetas__bloque img {
+    height: 240px;
+    width: 100%;
+    border-radius: 2px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px;
+    cursor: pointer;
+  }
+  .tarjetas .tajetas__bloque h2 {
+    text-align: left;
+    position: relative;
+    top: -230px;
+    left: 10px;
+    font-size: 18px;
+    color: #702d2d;
+  }
+  .tarjetas .tajetas__bloque .imagentip {
+    position: relative;
+    background: rgba(51, 59, 57, 0.7);
+    height: 244px;
+    width: 100%;
+    bottom: 268px;
+    border-radius: 10px;
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+    border: 4px solid gold;
+  }
+
+  .tarjetas .tajetas__bloque:hover > .imagentip {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@media screen and (max-width: 768px) {
+  .tarjetas {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    height: 900px;
+    position: relative;
+    top: 40px;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+  }
+
+  .tarjetas .tajetas__bloque:hover > .imagentip {
+    opacity: 1;
+    visibility: visible;
+  }
+}
 .pie-pagina {
   width: 100%;
   background-color: #0a1a2a;

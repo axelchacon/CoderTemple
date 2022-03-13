@@ -11,6 +11,7 @@ $ancho1: 20px;
   
 }
 
+
 header {
     background-position: center;
     justify-content: center;
@@ -212,7 +213,7 @@ header label {
         text-align: center;
         justify-content: center;
         height: 100px;
-        color: rgb(32, 36, 32);
+        color: rgb(19, 236, 207);
         font-family: 'Courier New', Courier, monospace;
         text-align: center;
         top: 50px;
@@ -228,6 +229,7 @@ header label {
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+        
         
         @each $Minicoder in MiniCoder5, MiniCoder9, MiniCoder12, MiniCoder18 {
             .#{$Minicoder}-icon {
@@ -347,6 +349,7 @@ header label {
         position: relative;
         text-align: center;
         top: 20px;
+     
     }
     .benefi {
         height: 450px;
@@ -372,10 +375,10 @@ header label {
             } 
             h2 {
                 position: relative;
-                
                 top: 0px;
-            
                 text-align: center;
+                
+                margin: 16px;
                
 
             }
@@ -385,12 +388,13 @@ header label {
                 background-size: cover; 
                 background-image: url("../img/#{$ben}.png");
                 
-                height: 130px;
+                height: 120px;
                 width: 100%;
                
                 transition: height 1s;
                 justify-content: center;
                 align-items: center;
+           
                 
                 
             }
@@ -452,7 +456,7 @@ header label {
                 background-size: cover; 
                 background-image: url("../img/#{$ben}.png");
                 
-                height: 90px;
+                height: 60px;
                 width: 100%;
                
                 transition: height 1s;

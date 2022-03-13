@@ -167,7 +167,7 @@ header label {
   text-align: center;
   justify-content: center;
   height: 100px;
-  color: #202420;
+  color: #13eccf;
   font-family: "Courier New", Courier, monospace;
   text-align: center;
   top: 50px;
@@ -365,11 +365,12 @@ header label {
   position: relative;
   top: 0px;
   text-align: center;
+  margin: 16px;
 }
 .contenedor-benedicios .benefi .ben1-ben {
   background-size: cover;
   background-image: url("../img/ben1.png");
-  height: 130px;
+  height: 120px;
   width: 100%;
   transition: height 1s;
   justify-content: center;
@@ -378,7 +379,7 @@ header label {
 .contenedor-benedicios .benefi .ben2-ben {
   background-size: cover;
   background-image: url("../img/ben2.png");
-  height: 130px;
+  height: 120px;
   width: 100%;
   transition: height 1s;
   justify-content: center;
@@ -387,7 +388,7 @@ header label {
 .contenedor-benedicios .benefi .ben3-ben {
   background-size: cover;
   background-image: url("../img/ben3.png");
-  height: 130px;
+  height: 120px;
   width: 100%;
   transition: height 1s;
   justify-content: center;
@@ -396,7 +397,7 @@ header label {
 .contenedor-benedicios .benefi .ben4-ben {
   background-size: cover;
   background-image: url("../img/ben4.png");
-  height: 130px;
+  height: 120px;
   width: 100%;
   transition: height 1s;
   justify-content: center;
@@ -440,7 +441,7 @@ header label {
   .contenedor-benedicios .benefi .ben1-ben {
     background-size: cover;
     background-image: url("../img/ben1.png");
-    height: 90px;
+    height: 60px;
     width: 100%;
     transition: height 1s;
     justify-content: center;
@@ -449,7 +450,7 @@ header label {
   .contenedor-benedicios .benefi .ben2-ben {
     background-size: cover;
     background-image: url("../img/ben2.png");
-    height: 90px;
+    height: 60px;
     width: 100%;
     transition: height 1s;
     justify-content: center;
@@ -458,7 +459,7 @@ header label {
   .contenedor-benedicios .benefi .ben3-ben {
     background-size: cover;
     background-image: url("../img/ben3.png");
-    height: 90px;
+    height: 60px;
     width: 100%;
     transition: height 1s;
     justify-content: center;
@@ -467,7 +468,7 @@ header label {
   .contenedor-benedicios .benefi .ben4-ben {
     background-size: cover;
     background-image: url("../img/ben4.png");
-    height: 90px;
+    height: 60px;
     width: 100%;
     transition: height 1s;
     justify-content: center;
