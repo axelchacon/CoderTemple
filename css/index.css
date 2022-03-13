@@ -369,7 +369,7 @@ header label:hover {
   animation: animate 1588s both infinite;
   z-index: 2;
   width: 100%;
-  bottom: -120px;
+  bottom: -60px;
 }
 @keyframes animate {
   0% {
@@ -389,7 +389,7 @@ header label:hover {
     animation: animate 1999s both infinite;
     z-index: 2;
     width: 100%;
-    bottom: -35px;
+    bottom: -8px;
   }
 }
 .tabla {
